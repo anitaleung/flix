@@ -38,6 +38,10 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://raw.githubusercontent.com/anitaleung/flix/master/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+**Stage 2**
+
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
