@@ -2,8 +2,10 @@
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
+inhibit_all_warnings!
 
 target 'Flix' do
-    pod 'AFNetworking'
+    pod 'AFNetworking’
+    pod ‘MBProgressHUD’
 end
 
