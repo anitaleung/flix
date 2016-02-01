@@ -40,13 +40,9 @@ Stage 1     | Stage 2    | Stage 3
 
 **Note:** The searchbar doesn't show up correctly in the third gif for some reason. Screenshots are provided because of this.
 
-Home | Search  
------|--------
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Home Screenshot' width='' alt='Home Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Search Screenshot' width='' alt='Search Screenshot' />
-
-Loading | Network Error
----------|--------------
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Loading Screenshot' width='25%' alt='SLoading creenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot4.png' title='Network Error Screenshot' width='25%' alt='Network ErrorScreenshot' />
+Home | Search | Loading | Network Error
+-----|--------|---------|--------------
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Home Screenshot' width='50%' alt='Home Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Search Screenshot' width='50%' alt='Search Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Loading Screenshot' width='25%' alt='SLoading creenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot4.png' title='Network Error Screenshot' width='25%' alt='Network ErrorScreenshot' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
