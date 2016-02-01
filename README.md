@@ -34,7 +34,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-Stage 1     | Stage 2    | Stage 3 
+Just movies    | Loading added   | Optional features added
 ----------- | ---------- | -----------
 <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> | <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> | <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
