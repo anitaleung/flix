@@ -2,7 +2,7 @@
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **2** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -34,8 +34,8 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-**Stage 1** | **Stage 2** 
-
+**Stage 1** | **Stage 2**
+----------------------------
 <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> | <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 **Stage 3**
