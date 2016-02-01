@@ -42,13 +42,8 @@ Stage 1     | Stage 2    | Stage 3
 
 Home | Search | Loading | Network Error
 -----|--------|---------|--------------
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Screenshot' width='' alt='Screenshot' />
-|
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
-|
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />
-|
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Screenshot' width='' alt='Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
+|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
