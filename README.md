@@ -15,11 +15,11 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-- [ ] User sees an error message when there's a networking error.
-- [ ] Movies are displayed using a CollectionView instead of a TableView.
-- [ ] User can search for a movie.
-- [ ] All images fade in as they are loading.
-- [ ] Customize the UI.
+- [x] User sees an error message when there's a networking error.
+- [x] Movies are displayed using a CollectionView instead of a TableView.
+- [x] User can search for a movie.
+- [x] All images fade in as they are loading.
+- [x] Customize the UI.
 
 The following **additional** features are implemented:
 
@@ -36,17 +36,29 @@ Here's a walkthrough of implemented user stories:
 
 **Stage 1**
 
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 **Stage 2**
 
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+**Stage 3**
+
+Note: The searchbar doesn't show up correctly in the gif for some reason. Screenshots are provided because of this.
+
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/screenshots/screenshot1.png' title='Screenshot' width='' alt='Screenshot' />
+
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
+
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Work in progress.
+There was a typo in the MovieCollectionViewCell identifier which caused a "NSInternalInconsistencyException" that took almost an hour to solve. :)
 
 ## License
 

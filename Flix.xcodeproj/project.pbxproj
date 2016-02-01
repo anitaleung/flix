@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080976BE1C5EAC5900582287 /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080976BD1C5EAC5900582287 /* MovieCollectionCell.swift */; };
 		0851038B1C5619F6002ACE2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851038A1C5619F6002ACE2B /* AppDelegate.swift */; };
 		085103901C5619F6002ACE2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0851038E1C5619F6002ACE2B /* Main.storyboard */; };
 		085103921C5619F6002ACE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085103911C5619F6002ACE2B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080976BD1C5EAC5900582287 /* MovieCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
 		085103871C5619F6002ACE2B /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0851038A1C5619F6002ACE2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0851038F1C5619F6002ACE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				085103A11C5625A1002ACE2B /* Views */,
 				0851038A1C5619F6002ACE2B /* AppDelegate.swift */,
 				0851038E1C5619F6002ACE2B /* Main.storyboard */,
+				080976BD1C5EAC5900582287 /* MovieCollectionCell.swift */,
 				085103911C5619F6002ACE2B /* Assets.xcassets */,
 				085103931C5619F6002ACE2B /* LaunchScreen.storyboard */,
 				085103961C5619F6002ACE2B /* Info.plist */,
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080976BE1C5EAC5900582287 /* MovieCollectionCell.swift in Sources */,
 				0851038B1C5619F6002ACE2B /* AppDelegate.swift in Sources */,
 				0851039F1C561B11002ACE2B /* MoviesViewController.swift in Sources */,
 				085103A61C562725002ACE2B /* MovieCell.swift in Sources */,

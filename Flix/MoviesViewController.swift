@@ -10,35 +10,54 @@ import UIKit
 import AFNetworking
 import MBProgressHUD
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MoviesViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var networkErrorView: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet var navi: UIView!
     
     var movies: [NSDictionary]?
+    var filteredMovies: [NSDictionary]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
-        tableView.delegate = self
+        self.networkErrorView.alpha = 0.0
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        searchBar.delegate = self
+        
+        // Shadow on navigation
+        navi.layer.shadowColor = UIColor.blackColor().CGColor
+        navi.layer.shadowOpacity = 0.3
+        navi.layer.shadowOffset = CGSizeZero
+        navi.layer.shadowRadius = 3
+        navi.layer.shadowPath = UIBezierPath(rect: navi.bounds).CGPath
+        navi.layer.shouldRasterize = true
         
         // Display HUD right before the request is made
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
     
         // Initialize a UIRefreshControl
         let refreshControl = UIRefreshControl()
+        
+        refreshControl.bounds = CGRectMake(0, 90, refreshControl.bounds.size.width, refreshControl.bounds.size.height)
         refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
-        tableView.insertSubview(refreshControl, atIndex: 0)
+        collectionView.insertSubview(refreshControl, atIndex: 0)
         refreshControlAction(refreshControl)
     }
     
+    // Refresh and retrieve data to display in collection view
     func refreshControlAction(refreshControl: UIRefreshControl) {
+        print("test")
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
         let request = NSURLRequest(
             URL: url!,
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
-            timeoutInterval: 10
+            timeoutInterval: 5
         )
         
         let session = NSURLSession(
@@ -52,21 +71,28 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 if let data = dataOrNil {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            //                            print("response: \(responseDictionary)")
-                            
                             // Hide HUD once the network request comes back (must be done on main UI thread)
                             MBProgressHUD.hideHUDForView(self.view, animated: true)
-                
-                            self.movies = responseDictionary["results"] as? [NSDictionary]
                             
-                            // Reload the tableView now that there is new data
-                            self.tableView.reloadData()
+                            // Hide network error
+                            self.networkErrorView.alpha = 0.0
+                            
+                            self.movies = responseDictionary["results"] as? [NSDictionary]
+                            self.filteredMovies = self.movies
+                            
+                            // Reload the collection view now that there is new data
+                            self.collectionView.reloadData()
                             
                             // Tell the refreshControl to stop spinning
                             refreshControl.endRefreshing()
-                            
-                            //print (self.movies)
                     }
+                }
+                // Network error
+                if let _ = error {
+                    refreshControl.endRefreshing()
+                    UIView.animateWithDuration(0.2, animations: {() -> Void in
+                        self.networkErrorView.alpha = 1.0
+                    })
                 }
         })
         task.resume()
@@ -76,44 +102,75 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let movies = movies {
+    // Behavior for searchbar
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredMovies = movies
+        } else {
+            filteredMovies = movies?.filter({(movie: NSDictionary) -> Bool in
+                if (movie["title"] as! String).rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil {
+                    return true
+                } else {
+                    return false
+                }
+            })
+        }
+        collectionView.reloadData()
+    }
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        self.searchBar.setShowsCancelButton(true, animated: true)
+    }
+    
+    // Clear search bar when cancel is hit
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(false, animated: true)
+        searchBar.resignFirstResponder()
+        searchBar.text = ""
+        filteredMovies = movies
+        collectionView.reloadData()
+    }
+    
+    // Return appropriate number of movies
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let movies = filteredMovies {
             return movies.count
         } else {
             return 0
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
+    // Populate collection cell with movie posters
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("codepath.MovieCollectionCell", forIndexPath: indexPath) as! MovieCollectionCell
+        let movie = filteredMovies![indexPath.row]
+//
+//        //cell.titleLabel.text = title
+//        //cell.overviewLabel.text = overview
+//        cell.moviePoster.setImageWithURL(imageUrl!)
         
-        let movie = movies![indexPath.row]
-        let title = movie["title"] as! String
-        let overview = movie["overview"] as! String
-        let posterPath = movie["poster_path"] as! String
-        
-        let baseUrl = "http://image.tmdb.org/t/p/w500/"
-        
-        let imageUrl = NSURL(string: baseUrl + posterPath)
-        
-        cell.titleLabel.text = title
-        cell.overviewLabel.text = overview
-        cell.posterView.setImageWithURL(imageUrl!)
-        
-        
-        print("row \(indexPath.row)")
+        if let posterPath = movie["poster_path"] as? String {
+            let baseUrl = "http://image.tmdb.org/t/p/w500"
+            if let imageUrl = NSURL(string: baseUrl + posterPath){
+                let imageRequest = NSURLRequest(URL: imageUrl)
+                
+                // Fade movie poster in
+                cell.moviePoster.setImageWithURLRequest(imageRequest, placeholderImage: nil, success: {(imagerequest, imageResponse, image) -> Void in
+                    if imageResponse != nil{
+                        cell.moviePoster.alpha = 0.0
+                        cell.moviePoster.image = image
+                        UIView.animateWithDuration(0.3, animations: {() -> Void in
+                            cell.moviePoster.alpha = 1.0
+                        })
+                    } else{
+                        cell.moviePoster.image = image
+                    }},
+                    failure: nil
+                )
+            }
+        }
         return cell
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
