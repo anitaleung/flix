@@ -40,10 +40,13 @@ Stage 1     | Stage 2    | Stage 3
 
 **Note:** The searchbar doesn't show up correctly in the third gif for some reason. Screenshots are provided because of this.
 
-Home | Search | Loading | Network Error
------|--------|---------|--------------
+Home | Search  
+-----|--------
 <img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Screenshot' width='' alt='Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
-|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />
+
+Loading | Network Error
+---------|--------------
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Screenshot' width='' alt='Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot4.png' title='Screenshot' width='' alt='Screenshot' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
