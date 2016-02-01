@@ -42,7 +42,7 @@ Stage 1     | Stage 2    | Stage 3
 
 Home | Search | Loading | Network Error
 -----|--------|---------|--------------
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Home Screenshot' width='50%' alt='Home Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Search Screenshot' width='50%' alt='Search Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Loading Screenshot' width='25%' alt='SLoading creenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot4.png' title='Network Error Screenshot' width='25%' alt='Network ErrorScreenshot' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Home Screenshot' width='' alt='Home Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Search Screenshot' width='' alt='Search Screenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot3.png' title='Loading Screenshot' width='' alt='SLoading creenshot' />|<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot4.png' title='Network Error Screenshot' width='' alt='Network ErrorScreenshot' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
