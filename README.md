@@ -34,13 +34,9 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-**Stage 1**
+**Stage 1** | **Stage 2** 
 
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-**Stage 2**
-
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> | <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 **Stage 3**
 
@@ -48,11 +44,11 @@ Note: The searchbar doesn't show up correctly in the gif for some reason. Screen
 
 <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/screenshots/screenshot1.png' title='Screenshot' width='' alt='Screenshot' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot1.png' title='Screenshot' width='' alt='Screenshot' />
 
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
 
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/Screenshots/screenshot2.png' title='Screenshot' width='' alt='Screenshot' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
