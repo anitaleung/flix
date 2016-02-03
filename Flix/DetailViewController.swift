@@ -31,8 +31,6 @@ class DetailViewController: UIViewController {
         
         overviewLabel.sizeToFit()
         
-        
-        
         if let posterPath = movie["poster_path"] as? String {
             let baseUrl = "http://image.tmdb.org/t/p/w500"
             let imageUrl = NSURL(string: baseUrl + posterPath)
@@ -49,7 +47,6 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -59,5 +56,4 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
