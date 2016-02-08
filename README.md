@@ -78,7 +78,7 @@ The following **required** functionality is completed:
 
 - [x] User can view movie details by tapping on a cell.
 - [x] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
-- [ ] Customize the selection effect of the cell.
+- [x] Customize the selection effect of the cell.
 
 The following **optional** features are implemented:
 
@@ -91,16 +91,16 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. How to make background size change when scrolling.
+2. How to link to Youtube trailer. 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-**Tabs and Details**
-
-<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+ Tabs and Details | Customized Version
+-----|--------|
+<img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> | <img src='https://raw.githubusercontent.com/anitaleung/flix/master/gifs/stage5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE41071E5B553FF3ED678E3BC262170FAE5D493F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "00823661FF60EBC9EEA9988A82FA42EC80285FA0" : 0,
+    "AE41071E5B553FF3ED678E3BC262170FAE5D493F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A45CDC70-6B4D-408F-8743-18975CC09D6A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "00823661FF60EBC9EEA9988A82FA42EC80285FA0" : "..",
+    "AE41071E5B553FF3ED678E3BC262170FAE5D493F" : "flix\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Flix",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Flix.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anitaleung\/fun-facts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "00823661FF60EBC9EEA9988A82FA42EC80285FA0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anitaleung\/flicks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE41071E5B553FF3ED678E3BC262170FAE5D493F"
+    }
+  ]
+}
